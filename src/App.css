@@ -1,0 +1,44 @@
+body {
+    font-family: "Swanky and Moo Moo", cursive;
+}
+.card-title {
+    text-align: center;
+    font: 500 1.95rem "Swanky and Moo Moo", sans-serif;
+}
+.card-subtitle {
+    font: 400 1.4rem "Swanky and Moo Moo", sans-serif;
+    text-align: center;
+}
+.card-text {
+    text-align: center;
+    font: 400 1rem "roboto", sans-serif;
+}
+.card-img-overlay .card-title {
+    font-family: "Federo", sans-serif;
+    position: bottom;
+    color: #FCFAFA;
+    background-color: rgba(22, 42, 60, 0.321);
+}
+ .jumbotron-fluid h1 {
+    font: 900 3rem "Swanky and Moo Moo", cursive;
+    color: black;
+}
+.jumbotron-fluid h2 {
+    font: .8rem;
+    color: rgba(0, 62, 80);
+}
+.navbar {
+    font-family: "Swanky and Moo Moo", sans-serif;
+    background-color: rgba(171, 237, 248, 0.865);
+}
+footer {
+    background-color: rgba(241, 241, 241);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.jumbotron {
+    margin: 0px;
+    padding: 30 px;
+}
+
