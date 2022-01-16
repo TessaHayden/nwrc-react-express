@@ -1,44 +1,166 @@
 body {
-    font-family: "Swanky and Moo Moo", cursive;
+  font-family: "Swanky and Moo Moo", cursive;
 }
-.card-title {
-    text-align: center;
-    font: 500 1.95rem "Swanky and Moo Moo", sans-serif;
+.container-row .row .col {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  padding: 6rem;
+  text-align: center;
+  font-size: 1.75rem;
+  box-shadow: 10px 10px 5px 17px rgb(236, 233, 233);
 }
-.card-subtitle {
-    font: 400 1.4rem "Swanky and Moo Moo", sans-serif;
-    text-align: center;
+.container-row .a-link {
+  font-size: 1.4rem;
+  padding-bottom: 3rem;
 }
-.card-text {
-    text-align: center;
-    font: 400 1rem "roboto", sans-serif;
-}
-.card-img-overlay .card-title {
-    font-family: "Federo", sans-serif;
-    position: bottom;
-    color: #FCFAFA;
-    background-color: rgba(22, 42, 60, 0.321);
-}
- .jumbotron-fluid h1 {
-    font: 900 3rem "Swanky and Moo Moo", cursive;
-    color: black;
-}
-.jumbotron-fluid h2 {
-    font: .8rem;
-    color: rgba(0, 62, 80);
-}
-.navbar {
-    font-family: "Swanky and Moo Moo", sans-serif;
-    background-color: rgba(171, 237, 248, 0.865);
-}
-footer {
-    background-color: rgba(241, 241, 241);
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-.jumbotron {
-    margin: 0px;
-    padding: 30 px;
+div .shadow-box-div {
+  padding: 4rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 
+div .carousel .btn {
+  background-color: rgba(216, 253, 253, 0.363);
+  color: black;
+  font-weight: normal;
+  font-family: "Josefin Sans", sans-seriff;
+}
+.card {
+  margin-top: 22px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-style {
+  background-color: rgb(95, 172, 202);
+  align-content: center;
+}
+
+.card-title {
+  text-align: center;
+  font: 600 2.3rem "Cedarville Cursive", sans-serif;
+}
+.card-subtitle {
+  font: 300 1.4rem "Josefin Sans", sans-serif;
+  text-align: center;
+}
+.card-text {
+  text-align: center;
+  font: 300 1.2rem "roboto", sans-serif;
+}
+.card-img-overlay .card-title {
+  font-family: "Federo", sans-serif;
+  position: bottom;
+  color: #fcfafa;
+  background-color: rgba(22, 42, 60, 0.321);
+}
+.quote {
+  font-size: 6rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+div .home-top-div .card {
+  text-align: left;
+  background-color: rgb(85, 151, 238);
+  flex-direction: row;
+  width: 50%;
+}
+.home-top-div .card-text {
+  padding-top: 1.8rem;
+  text-align: left;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+.home-bottom-page {
+  background-image: url(../src/images/vjelly.jpeg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+  margin-bottom: 100px;
+}
+.vertical-align {
+  margin-top: 10rem;
+  padding: 12.9rem;
+  width: 100vh;
+}
+
+.special-text {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.jumbotron {
+  background-color: white;
+}
+.jumbotron-fluid h1 {
+  font: 900 3rem "Cedarville Cursive", cursive;
+  color: black;
+  text-shadow: 0 0 15px rgba(229, 250, 4);
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.jumbotron-fluid h2 {
+  font: 500 1.6rem "Josefin Sans", sans-serif;
+  color: rgba(1, 44, 57);
+  text-align: center;
+}
+
+.navbar {
+  position: relative;
+  font-family: "Swanky and Moo Moo", sans-serif;
+  font-size: 1.2rem;
+  background-color: rgb(1, 44, 57);
+}
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  display: block;
+}
+.nav-link {
+  font-family: "Cedarville Cursive", cursive;
+  color: rgb(94, 232, 247);
+  text-shadow: 0 0 20px rgb(255, 255, 255);
+}
+footer {
+  background-color: rgba(241, 241, 241);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+a {
+  display: inline;
+}
+.break-space {
+  margin: 1.6rem;
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+}
+.word-enlargement {
+  font: 400 2.7rem "Cedarville Cursive", sans-serif;
+  text-align: left;
+  display: inline;
+}
+.jumbotron {
+  margin: 0px;
+  padding: 30 px;
+}
+.form-control {
+  font: 200 0.8rem "Nunito", sans-serif;
+}
+.form-group {
+  font: 400 1.2rem "Swanky and Moo Moo", cursive;
+}
+.breadcrumb {
+  background-color: rgb(130, 224, 255);
+}
+.breadcrumb-item {
+  font: 400 0.8rem "Nunito", sans-serif;
+}
+.form-group {
+  margin: 1.2rem;
+}
+.carousel {
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
