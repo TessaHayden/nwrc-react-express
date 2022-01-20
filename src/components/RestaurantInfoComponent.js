@@ -11,17 +11,9 @@ import {
 import { Link } from "react-router-dom";
 import { Fade } from "react-animation-components";
 import Carousel from "react-bootstrap/Carousel";
+import { Loading } from './LoadingComponent';
+import { baseUrl } from '../shared/baseUrl';
 
-function RestaurantInfo(props) {
-  if (props.restaurant) {
-    return (
-      <div className="container">
-        <div className="row">
-          <RenderRestaurant restaurant={props.restaurant} />
-        </div>
-      </div>
-    );
-  }
 
   function RenderRestaurant({ restaurant }) {
     return (
@@ -29,7 +21,7 @@ function RestaurantInfo(props) {
         <h4>{restaurant.name}</h4>
         <Fade in key={restaurant.id}>
           <Card className="col-sm-7">
-            <CardImg top src={restaurant.altImg} alt={restaurant.name} />
+            <CardImg top src={baseUrl + restaurant.altImg} alt={restaurant.name} />
             <CardBody>
               <CardText>{restaurant.description}</CardText>
             </CardBody>
@@ -38,7 +30,7 @@ function RestaurantInfo(props) {
             <Carousel.Item style={{ maxHeight: "650px" }}>
               <img
                 className="d-block w-100"
-                src={restaurant.carousel4}
+                src={baseUrl + restaurant.carousel4}
                 alt={restaurant.name}
               />
               <Carousel.Caption>
@@ -51,7 +43,7 @@ function RestaurantInfo(props) {
             <Carousel.Item style={{ maxHeight: "650px" }}>
               <img
                 className="d-block w-100"
-                src={restaurant.carousel1}
+                src={baseUrl + restaurant.carousel1}
                 alt={restaurant.name}
               />
               <Carousel.Caption>
@@ -64,7 +56,7 @@ function RestaurantInfo(props) {
             <Carousel.Item style={{ maxHeight: "650px" }}>
               <img
                 className="d-block w-100"
-                src={restaurant.carousel2}
+                src={baseUrl + restaurant.carousel2}
                 alt={restaurant.name}
               />
               <Carousel.Caption>
@@ -77,7 +69,7 @@ function RestaurantInfo(props) {
             <Carousel.Item style={{ maxHeight: "650px" }}>
               <img
                 className="d-block w-100"
-                src={restaurant.carousel3}
+                src={baseUrl + restaurant.carousel3}
                 alt={restaurant.name}
               />
               <Carousel.Caption>
@@ -93,6 +85,36 @@ function RestaurantInfo(props) {
     );
   }
 
+function RestaurantInfo(props) {
+  if (props.isLoading) {
+    return (
+      <div className="container">
+        <div className="row">
+          <Loading />
+        </div>
+      </div>
+    );
+  }
+  if (props.errMess) {
+    return (
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <h4>{props.errMess}</h4>
+          </div>
+        </div>
+      </div>
+    );
+  }
+  if (props.restaurant) {
+    return (
+      <div className="container">
+        <div className="row">
+          <RenderRestaurant restaurant={props.restaurant} />
+        </div>
+      </div>
+    );
+  }
   return (
     <div className="container">
       <div className="row">

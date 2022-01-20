@@ -1,6 +1,6 @@
 export const RESTAURANTS = [
   {
-    id: 1,
+    id: 0,
     featured: true,
     name: "de Fuego",
     image: "../assets/images/deguegoSz.jpg",
@@ -13,7 +13,7 @@ export const RESTAURANTS = [
     website: "https://www.defuegogrille.com/",
   },
   {
-    id: 2,
+    id: 1,
     featured: false,
     name: "Hayden's Lakefront Grill",
     image: "../assets/images/Haydenslittle.jpg",
@@ -26,7 +26,7 @@ export const RESTAURANTS = [
     website: "https://www.haydensgrill.com/",
   },
   {
-    id: 3,
+    id: 2,
     featured: false,
     name: "Stone Cliff Inn",
     image: "../assets/images/stonecliffSz.jpg",
@@ -39,7 +39,7 @@ export const RESTAURANTS = [
     website: "https://www.stonecliffinn.com/",
   },
   {
-    id: 4,
+    id: 3,
     featured: false,
     name: "Shigezo",
     image: "../assets/images/ShigezoSz.jpg",
@@ -52,7 +52,7 @@ export const RESTAURANTS = [
     website: "https://www.shigezo-pdx.com/",
   },
   {
-    id: 5,
+    id: 4,
     featured: false,
     name: "Southpark Seafood Grill",
     image: "../assets/images/southparkSz.jpeg",
@@ -65,7 +65,7 @@ export const RESTAURANTS = [
     website: "https://southparkseafood.com/",
   },
   {
-    id: 6,
+    id: 5,
     featured: false,
     name: "Le Chon",
     image: "../assets/images/lechonSz.jpg",

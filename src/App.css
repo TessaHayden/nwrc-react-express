@@ -111,13 +111,8 @@ div .home-top-div .card {
   font-size: 1.2rem;
   background-color: rgb(1, 44, 57);
 }
-.navbar-brand {
-  position: absolute;
-  left: 50%;
-  margin-left: -50px;
-  display: block;
-}
-.nav-link {
+
+.navlink {
   font-family: "Cedarville Cursive", cursive;
   color: rgb(94, 232, 247);
   text-shadow: 0 0 20px rgb(255, 255, 255);

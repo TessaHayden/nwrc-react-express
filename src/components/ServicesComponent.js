@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import {
-  Card,
-  CardText,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
+  // Card,
+  // CardText,
+  // CardBody,
+  // CardTitle,
+  // CardSubtitle,
   Breadcrumb,
   BreadcrumbItem,
   Button,
@@ -76,55 +76,63 @@ function CalendarFn() {
   );
 }
 
-function ClientList({ restaurantsfl }) {
-  const sortedClientList = (restaurantArr) => {
-    return restaurantArr.sort((a, b) => {
-      const objA = a.name.toUpperCase();
-      const objB = b.name.toUpperCase();
-      return objA < objB ? -1 : objA > objB ? 1 : 0;
-    });
-  };
-  console.log(sortedClientList(restaurantsfl));
-  return (
-    <div className="box">
-      <Card>
-        <CardBody>
-          <CardTitle>Client List</CardTitle>
-          <CardSubtitle>Restaurants by name:</CardSubtitle>
-          <hr />
-          <CardText>
-            <ul>
-              {sortedClientList(restaurantsfl).map((restaurant) => (
-                <li key={restaurant.key}>{restaurant.name}</li>
-              ))}
-            </ul>
-          </CardText>
-        </CardBody>
-      </Card>
-    </div>
-  );
-}
-function Services({ services }) {
-  return (
-    <div>
-      <Card>
-        <CardTitle>Services</CardTitle>
-        <CardSubtitle>Services provided:</CardSubtitle>
-        <hr />
-        <CardText>
-          <ul>
-            {services.map((service) => (
-              <li key={service.key}>
-                {service.title}
-                {services.description}
-              </li>
-            ))}
-          </ul>
-        </CardText>
-      </Card>
-    </div>
-  );
-}
+// function ClientList({ restaurantsfl }) {
+//   if (restaurantsfl) {
+//     const sortedClientList = (restaurantArr) => {
+//       return restaurantArr.sort((a, b) => {
+//         const objA = a.name.toUpperCase();
+//         const objB = b.name.toUpperCase();
+//         return objA < objB ? -1 : objA > objB ? 1 : 0;
+//       });
+//     };
+//     console.log(sortedClientList(restaurantsfl));
+
+//     return (
+//       <div className="box">
+//         <Card>
+//           <CardBody>
+//             <CardTitle>Client List</CardTitle>
+//             <CardSubtitle>Restaurants by name:</CardSubtitle>
+//             <hr />
+//             <CardText>
+//               <ul>
+//                 {sortedClientList(restaurantsfl).map((restaurant) => (
+//                   <li key={restaurant.key}>{restaurant.name}</li>
+//                 ))}
+//               </ul>
+//             </CardText>
+//           </CardBody>
+//         </Card>
+//       </div>
+//     );
+//   }
+//   return <div />;
+// }
+
+// function Services({ services }) {
+//   if (services) {
+//     return (
+//       <div>
+//         <Card>
+//           <CardTitle>Services</CardTitle>
+//           <CardSubtitle>Services provided:</CardSubtitle>
+//           <hr />
+//           <CardText>
+//             <ul>
+//               {services.map((service) => (
+//                 <li key={service.key}>
+//                   {service.title}
+//                   {services.description}
+//                 </li>
+//               ))}
+//             </ul>
+//           </CardText>
+//         </Card>
+//       </div>
+//     );
+//   }
+//   return <div />;
+// }
 
 function RenderServices(props) {
   return (
@@ -146,7 +154,7 @@ function RenderServices(props) {
           <CalendarFn />
         </div>
       </div>
-      <div className="row">
+      {/* <div className="row">
         <div className="col-sm-5 m-2">
           <Services services={props.services} />
         </div>
@@ -155,7 +163,7 @@ function RenderServices(props) {
         <div className="col-sm-5 m-2">
           <ClientList restaurantsfl={props.restaurantsfl} />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

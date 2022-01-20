@@ -1,8 +1,18 @@
-import { RESTAURANTS } from '../shared/restaurants';
+import * as ActionTypes from "./ActionTypes";
 
-export const Restaurants = (state = RESTAURANTS, action) => {
-    switch (action.type) {
-        default:
-            return state;
-    }
+export const Restaurants = (state = {
+    isLoading: true,
+    errMess: null,
+    restaurants: []
+  }, action) => {
+  switch (action.type) {
+    case ActionTypes.ADD_RESTAURANTS:
+      return {...state, isLoading: false, errMess: null, restaurants: action.payload};
+    case ActionTypes.RESTAURANTS_LOADING:
+      return { ...state, isLoading: true, errMess: null, restaurants: [] };
+    case ActionTypes.RESTAURANTS_FAILED:
+      return { ...state, isLoading: false, errMess: action.payload };
+    default:
+      return state;
+  }
 };

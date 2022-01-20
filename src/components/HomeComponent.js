@@ -10,27 +10,41 @@ import {
   Row,
   Col,
 } from "reactstrap";
+import { Loading } from "./LoadingComponent";
+import { baseUrl } from "../shared/baseUrl";
+import { FadeTransform } from "react-animation-components";
 
-function RenderCard({ item }) {
+function RenderCard({ item, isLoading, errMess }) {
+  if (isLoading) {
+    return <Loading />;
+  }
+  if (errMess) {
+    return <h4>{errMess}</h4>;
+  }
   return (
     <Container>
       <Row>
         <Col>
-          <Card style={{ width: "45rem" }}>
-            <CardImg src={item.altImg} alt={item.name} />
-            <CardBody>
-              <CardTitle>Bill Hayden</CardTitle>
-              <CardSubtitle>Owner &amp; Consultant</CardSubtitle>
-              <hr />
-              <CardText style={{ padding: ".7rem" }}>
-                Bill Hayden has served the Pacific NorthWest for over 20 years
-                as a restaurant consultant &amp; owner. Over 300 restaurants and
-                businesses have utilized Bill's expertise and skills to: improve
-                customer satisfaction, train employees, increase profits and
-                reduce losses.
-              </CardText>
-            </CardBody>
-          </Card>
+          <FadeTransform
+            in
+            transformProps={{ exitTransform: "scale(0.5) translate(50%)" }}
+          >
+            <Card style={{ width: "45rem" }}>
+              <CardImg src={baseUrl + item.altImg} alt={item.name} />
+              <CardBody>
+                <CardTitle>Bill Hayden</CardTitle>
+                <CardSubtitle>Owner &amp; Consultant</CardSubtitle>
+                <hr />
+                <CardText style={{ padding: ".7rem" }}>
+                  Bill Hayden has served the Pacific NorthWest for over 20 years
+                  as a restaurant consultant &amp; owner. Over 300 restaurants
+                  and businesses have utilized Bill's expertise and skills to:
+                  improve customer satisfaction, train employees, increase
+                  profits and reduce losses.
+                </CardText>
+              </CardBody>
+            </Card>
+          </FadeTransform>
         </Col>
       </Row>
     </Container>
@@ -45,11 +59,14 @@ function RenderTopScreen() {
           <Col className="col-sm-8 offset-2">
             {/* add unique fonts for specific words */}
             <p className="word-enlargement">For many</p>, the dream of owning
-            their own resaurant runs very deep.  A unique concept, an ideal
-            location, the perfected menu item or a sense of community calls to the
-            heart and gives you passion. Sometimes though, certain details may be
-            beyond the general scope of knowledge. Everything from blueprints,
-            equipment, full menu development, employee training and more! Which is where your friendly Northwest Restaurant Consultant comes in to help prepare and navigate you on your journey.<br />
+            their own resaurant runs very deep. A unique concept, an ideal
+            location, the perfected menu item or a sense of community calls to
+            the heart and gives you passion. Sometimes though, certain details
+            may be beyond the general scope of knowledge. Everything from
+            blueprints, equipment, full menu development, employee training and
+            more! Which is where your friendly Northwest Restaurant Consultant
+            comes in to help prepare and navigate you on your journey.
+            <br />
             <p className="break-space">
               When you've decided it's time to make your dreams a reality, call
               Bill Hayden :
@@ -71,7 +88,7 @@ function RenderTopScreen() {
   );
 }
 
-function RenderCenterScreen({ item }) {
+function RenderCenterScreen() {
   return (
     <div className="home-top-div">
       <Card>
@@ -88,7 +105,7 @@ function RenderCenterScreen({ item }) {
 
         <CardImg
           variant="bottom"
-          style={{ width: "45%" }}
+          style={{ width: "50%" }}
           src="../assets/images/brevemug.jpg"
         />
       </Card>
@@ -119,14 +136,30 @@ function RenderBottomScreen() {
 }
 
 function Home(props) {
-  return (
-    <div className="screen-container">
-      <RenderCard item={props.restaurant} />
-      <RenderTopScreen item={props.examples} />
-      <RenderCenterScreen examples={props.examples} />
-      <RenderBottomScreen />
-    </div>
-  );
+    return (
+      <div className="screen-container">
+        <div className="row">
+          <RenderCard
+            item={props.restaurants}
+            isLoading={props.restaurantsLoading}
+            errMess={props.restaurantsErrMess}
+          />
+        </div>
+        <div className="row">
+          <RenderTopScreen />
+        </div>
+        <div className="row">
+          <RenderCenterScreen />
+        </div>
+        <div className="row">
+          <div className="col">
+            <RenderBottomScreen />
+          </div>
+        </div>
+      </div>
+    );
 }
+
+
 
 export default Home;

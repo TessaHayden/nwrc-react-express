@@ -1,0 +1,623 @@
+{
+  "restaurants": [
+    {
+      "id": 0,
+      "featured": true,
+      "name": "de Fuego",
+      "image": "images/deguegoSz.jpg",
+      "altImg": "images/defuegopool.jpg",
+      "carousel1": "images/defuegofoodoffering.png",
+      "carousel2": "images/defuegolunchspread.jpg",
+      "carousel3": "images/defuegobrunchfood.png",
+      "carousel4": "images/brazilian-salmon-bowl.jpg",
+      "description": "South American tapas & parilla restaurant.",
+      "website": "https://www.defuegogrille.com/"
+    },
+    {
+      "id": 1,
+      "featured": false,
+      "name": "Hayden's Lakefront Grill",
+      "image": "images/Haydenslittle.jpg",
+      "altImg": "images/HaydenslakeSz.jpg",
+      "carousel1": "images/haydenbeefplate.jpg",
+      "carousel2": "images/haydensandwich.jpeg",
+      "carousel3": "images/haydenssalad.jpg.jpeg",
+      "carousel4": "images/haydensSalmonfood.jpeg.jpeg",
+      "description": "Family friendly, casual fine dining on a lake!",
+      "website": "https://www.haydensgrill.com/"
+    },
+    {
+      "id": 2,
+      "featured": false,
+      "name": "Stone Cliff Inn",
+      "image": "images/stonecliffSz.jpg",
+      "altImg": "images/stonecliffback.jpg",
+      "carousel1": "images/Stone_Cliff_395.jpg_",
+      "carousel2": "images/Stone_Cliff_fishfood.jpg",
+      "carousel3": "images/Stone_Cliff_foodplate.jpg",
+      "carousel4": "images/stonecliffupstairs.jpg",
+      "description": "A rustic inn off the Clackamas River.",
+      "website": "https://www.stonecliffinn.com/"
+    },
+    {
+      "id": 3,
+      "featured": false,
+      "name": "Shigezo",
+      "image": "images/ShigezoSz.jpg",
+      "altImg": "images/shigezocarousel.png",
+      "carousel1": "images/shigezocarousel1.jpg",
+      "carousel2": "images/shigezocarousel2.jpg",
+      "carousel3": "images/shigezocarousel3.jpg",
+      "carousel4": "images/shigezocarousel4.jpg",
+      "description": "Japanese sushi & izakaya bar.",
+      "website": "https://www.shigezo-pdx.com/"
+    },
+    {
+      "id": 4,
+      "featured": false,
+      "name": "Southpark Seafood Grill",
+      "image": "images/southparkSz.jpeg",
+      "altImg": "images/southparkmedium.jpeg",
+      "carousel1": "images/Southparkplate.jpeg",
+      "carousel2": "images/southparkseafoodspread.jpeg",
+      "carousel3": "images/southparkseafoodcounter.jpeg",
+      "carousel4": "images/southparkseafoodstew.jpeg",
+      "description": "High quality seafood grill in the heart of downtown Portland",
+      "website": "https://southparkseafood.com/"
+    },
+    {
+      "id": 5,
+      "featured": false,
+      "name": "Le Chon",
+      "image": "images/lechonSz.jpg",
+      "altImg": "images/lechondiningroom.jpg",
+      "carousel1": "images/lechonburger.jpg",
+      "carousel2": "images/lechonfishplate.jpg",
+      "carousel3": "images/lechonfood.jpg",
+      "carousel4": "images/lechonfoodoutside.jpg",
+      "description": "South American Tapas restaurant downtown Portland",
+      "website": "https://lechonpdx.com/"
+    }
+  ],
+
+  "services": [
+    {
+      "id": 0,
+      "title": "Developing new projects",
+      "description": "Design and blueprints"
+    },
+    {
+      "id": 1,
+      "title": "Changing a concept",
+      "description": "Onsite meetings and inspections"
+    },
+    {
+      "id": 2,
+      "title": "Equipment recommendations"
+    },
+    {
+      "id": 3,
+      "title": "Preferred vendor listings"
+    },
+    {
+      "id": 4,
+      "title": "Menu development"
+    },
+    {
+      "id": 5,
+      "title": "Food costing"
+    },
+    {
+      "id": 6,
+      "title": "Recipes"
+    },
+    {
+      "id": 7,
+      "title": "Menu design and printing"
+    },
+    {
+      "id": 8,
+      "title": "Bar & Cocktail program"
+    },
+    {
+      "id": 9,
+      "title": "On & off-site catering expertise",
+      "description": "Create or improve existing services"
+    },
+    {
+      "id": 10,
+      "title": "Wine specialist"
+    },
+    {
+      "id": 11,
+      "title": "Marketing strategy",
+      "description": "-Marketing materials,\n -Advertising plan, \n -Website design"
+    },
+    {
+      "id": 12,
+      "title": "Bookkeeping & HR assistance",
+      "description": "Profit & loss management"
+    }
+  ],
+
+  "restaurantsFl": [
+    {
+      "id": 6,
+      " featured": false,
+      "name": "Brasserie Montmarte"
+    },
+    {
+      "id": 7,
+      "featured": false,
+      "name": "Brazil Grill"
+    },
+    {
+      "id": 8,
+      "featured": false,
+      "name": "East India House"
+    },
+    {
+      "id": 9,
+      "featured": false,
+      "name": "Alexander's Greek Cuisine"
+    },
+    {
+      "id": 10,
+      "featured": false,
+      "name": "Cinetopia - Brewtopia"
+    },
+    {
+      "id": 11,
+      "featured": false,
+      "name": "Chowder House"
+    },
+    {
+      "id": 12,
+      "featured": false,
+      "name": "Bay View Bistro"
+    },
+    {
+      "id": 13,
+      "featured": false,
+      "name": "Ocean Blue"
+    },
+    {
+      "id": 14,
+      "featured": false,
+      "name": "ABV Roadhouse and Brewery"
+    },
+    {
+      "id": 15,
+      "featured": false,
+      "name": "Dirty Hands Roadhouse and Brewery"
+    },
+    {
+      "id": 16,
+      "featured": false,
+      "name": "Vera Burgers and Yo Creme"
+    },
+    {
+      "id": 17,
+      "featured": false,
+      "name": "Charlie's BBQ"
+    },
+    {
+      "id": 18,
+      "featured": false,
+      "name": "Napoleon's Crepery"
+    },
+    {
+      "id": 19,
+      "featured": false,
+      "name": "Writer's Eaze"
+    },
+    {
+      "id": 20,
+      "featured": false,
+      "name": "Wellness Center Crepery & Grill"
+    },
+    {
+      "id": 21,
+      "featured": false,
+      "name": "Inn at Face Rock"
+    },
+    {
+      "id": 22,
+      "featured": false,
+      "name": "Ramada Inn, Capser Way"
+    },
+    {
+      "id": 23,
+      "featured": false,
+      "name": "Refectory"
+    },
+    {
+      "id": 24,
+      "featured": false,
+      "name": "Clarion"
+    },
+    {
+      "id": 25,
+      "featured": false,
+      "name": "Alderwood Inn"
+    },
+    {
+      "id": 26,
+      "featured": false,
+      "name": "Quality Inn Convention Center"
+    },
+    {
+      "id": 27,
+      "featured": false,
+      "name": "Healthman Brew Pub & Bakery"
+    },
+    {
+      "id": 28,
+      " featured": false,
+      "name": "Pacific Inns"
+    },
+    {
+      "id": 29,
+      "featured": false,
+      "name": "Boomers Burgers, BBQ & Bar"
+    },
+    {
+      "id": 30,
+      "featured": false,
+      "name": "Old Country Kitchen"
+    },
+    {
+      "id": 31,
+      "featured": false,
+      "name": "Tillamook Air Museum Café"
+    },
+    {
+      "id": 32,
+      "featured": false,
+      "name": "Lone Pine Hotel & Restaurant"
+    },
+    {
+      "id": 33,
+      "featured": false,
+      "name": "Grant House Restaurant"
+    },
+    {
+      "id": 34,
+      "featured": false,
+      "name": "Bradford's Catering"
+    },
+    {
+      "id": 35,
+      "featured": false,
+      "name": "Evergreen Aviation Museum"
+    },
+    {
+      "id": 36,
+      "featured": false,
+      "name": "Billy Reeds"
+    },
+    {
+      "id": 37,
+      "featured": false,
+      "name": "Raccoon Lodge Brew Pub"
+    },
+    {
+      "id": 38,
+      "featured": false,
+      "name": "Ernesto's Italian Restaurant"
+    },
+    {
+      "id": 39,
+      "featured": false,
+      "name": "Hudson's"
+    },
+    {
+      "id": 40,
+      "featured": false,
+      "name": "Heathman Lodge"
+    },
+    {
+      "id": 41,
+      "featured": false,
+      "name": "River's American Grill"
+    },
+    {
+      "id": 42,
+      "featured": false,
+      "name": "Pasaro Italian Grill"
+    },
+    {
+      "id": 43,
+      "featured": false,
+      "name": "Waves Restaurant and Bar"
+    },
+    {
+      "id": 44,
+      "featured": false,
+      "name": "Red Lion, Salem"
+    },
+    {
+      "id": 45,
+      "featured": false,
+      "name": "Sunset Lanes"
+    },
+    {
+      "id": 46,
+      "featured": false,
+      "name": "Cousin's Restaurant"
+    },
+    {
+      "id": 47,
+      "featured": false,
+      "name": "Gerry Franks Konditorei"
+    },
+    {
+      "id": 48,
+      "featured": false,
+      "name": "Riverside Athletic Club"
+    },
+    {
+      "id": 49,
+      "featured": false,
+      "name": "Escape Lodging"
+    },
+    {
+      "id": 50,
+      "featured": false,
+      "name": "Phoenix Grand Inn"
+    },
+    {
+      "id": 51,
+      "featured": false,
+      "name": "Salem Conference Center"
+    },
+    {
+      "id": 52,
+      "featured": false,
+      "name": "Benjamin's"
+    },
+    {
+      "id": 53,
+      "featured": false,
+      "name": "G.I. Joe's Indie Car Races"
+    },
+    {
+      "id": 54,
+      "featured": false,
+      "name": "Hayden's Deli"
+    },
+    {
+      "id": 55,
+      "featured": false,
+      "name": "Pearson Air Museum"
+    },
+    {
+      "id": 56,
+      "featured": false,
+      "name": "Ramada Inn, Ocean Shores"
+    },
+    {
+      "id": 57,
+      "featured": false,
+      "name": "Alameda Café"
+    },
+    {
+      "id": 58,
+      "featured": false,
+      "name": "The Original Oak Tree"
+    },
+    {
+      "id": 59,
+      "featured": false,
+      "name": "Pinocchio's"
+    },
+    {
+      "id": 60,
+      "featured": false,
+      "name": "Abella Italian Kitchen"
+    },
+    {
+      "id": 61,
+      "featured": false,
+      "name": "Island Joe's Hunter Ridge Grill"
+    },
+    {
+      "id": 62,
+      "featured": false,
+      "name": "Peanut Butter & Ellie's"
+    },
+    {
+      "id": 63,
+      "featured": false,
+      "name": "The Park Café Wine Bar"
+    },
+    {
+      "id": 64,
+      "featured": false,
+      "name": "Morgan's Country Restaurant"
+    },
+    {
+      "id": 65,
+      "featured": false,
+      "name": "Blue Tangerine"
+    },
+    {
+      "id": 66,
+      "featured": false,
+      "name": "Assiago"
+    },
+    {
+      "id": 67,
+      "featured": false,
+      "name": "Thunder Ranch"
+    },
+    {
+      "id": 68,
+      "featured": false,
+      "name": "Café Al Denté"
+    },
+    {
+      "id": 69,
+      "featured": false,
+      "name": "Sternwheeler"
+    },
+    {
+      "id": 70,
+      "featured": false,
+      "name": "Rock Creek Country Club"
+    },
+    {
+      "id": 71,
+      "featured": false,
+      "name": "Fernwood Golf Course Grill"
+    },
+    {
+      "id": 72,
+      "featured": false,
+      "name": "Dodge Bros Saloon, Montana"
+    },
+    {
+      "id": 73,
+      "featured": false,
+      "name": "Black Point Inn"
+    },
+    {
+      "id": 74,
+      "featured": false,
+      "name": "John Jacobs Waterfront Grill"
+    },
+    {
+      "id": 75,
+      "featured": false,
+      "name": "Singer Hill Coffee Shop"
+    },
+    {
+      "id": 76,
+      "featured": false,
+      "name": "Sweet Dreams Desserts"
+    },
+    {
+      "id": 77,
+      "featured": false,
+      "name": "Mark Lindsay's Rock & Roll Café"
+    },
+    {
+      "id": 78,
+      "featured": false,
+      "name": "Blackstone American Grill"
+    },
+    {
+      "id": 79,
+      "featured": false,
+      "name": "Tondero"
+    },
+    {
+      "id": 80,
+      "featured": false,
+      "name": "Chayote SW Bar & Grill"
+    },
+    {
+      "id": 81,
+      "featured": false,
+      "name": "City Grill"
+    },
+    {
+      "id": 82,
+      "featured": false,
+      "name": "Original Joe's"
+    },
+    {
+      "id": 83,
+      "featured": false,
+      "name": "Piada X"
+    },
+    {
+      "id": 84,
+      "featured": false,
+      "name": "Bourbon and Buttermilk"
+    },
+    {
+      "id": 85,
+      "featured": false,
+      "name": "Heathen Brewery"
+    },
+    {
+      " id": 86,
+      "featured": false,
+      "name": "Eola Vineyards"
+    },
+    {
+      "id": 87,
+      "featured": false,
+      "name": "Feast 245"
+    },
+    {
+      "id": 88,
+      "featured": false,
+      "name": "Verdigis"
+    },
+    {
+      "id": 89,
+      "featured": false,
+      "name": "Silvies Valley Ranch"
+    },
+    {
+      "id": 90,
+      "featured": false,
+      "name": "Oregon Wine Gardens"
+    },
+    {
+      "id": 91,
+      "featured": false,
+      "name": "Black Betty's Honkytonk Bar"
+    },
+    {
+      "id": 92,
+      "featured": false,
+      "name": "Los Potrillos"
+    },
+    {
+      "id": 93,
+      "featured": false,
+      "name": "Cornell Farms"
+    },
+    {
+      "id": 94,
+      "featured": false,
+      "name": "Liquor Store & Art Gallery Bar"
+    }
+  ],
+
+  "examples": [
+    {
+      "id": 0,
+      "name": "Bacchus blue print",
+      "image": "images/Bacchusblueprint.png",
+      "altImg": "images/defuegopool.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Stonecliff Event",
+      "image": "images/stonecliffevent.jpg",
+      "altImg": "images/HaydenslakeSz.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Stone Cliff Inn",
+      "image": "images/stonecliffSz.jpg",
+      "altImg": "images/stonecliffback.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Ernestos Event",
+      "image": "images/Ernestosevent.jpg",
+      "altImg": "images/shigezocarousel.png"
+    },
+    {
+      "id": 4,
+      "name": "Brazilian Salmon Bowl",
+      "image": "images/brazilian-salmon-bowl.jpg",
+      "altImg": "images/southparkmedium.jpeg"
+    }
+  ]
+}

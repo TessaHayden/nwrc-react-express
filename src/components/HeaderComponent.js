@@ -50,18 +50,19 @@ class Header extends Component {
       <React.Fragment>
         <Navbar dark sticky="top" expand="md">
           <div className="container">
-            <div className="row">
-              <div className="col-md-2">
-                <NavbarBrand className="mr-auto" href="/">
+            <div className="row align-items-center">
+              <div className="navbar-header justify-content-center">
+                <NavbarBrand href="/">
                   <img
                     src="/assets/images/nwreslogo.svg"
                     height="90"
                     width="90"
+                    max-width="100%"
                     alt="NW restaurant consultant logo"
                   />
                 </NavbarBrand>
               </div>
-              <div className="col-md-4">
+              <div className="col">
                 <NavbarToggler onClick={this.toggleNav} />
                 <Collapse isOpen={this.state.isNavOpen} navbar>
                   <Nav navbar>
@@ -117,7 +118,7 @@ class Header extends Component {
           <div>
             <NavItem>
               <Button
-                style={{ marginRight: "2.6rem" }}
+                style={{ margin: "2.6rem" }}
                 outline
                 onClick={this.toggleModal}
               >
@@ -165,7 +166,7 @@ class Header extends Component {
             </Form>
           </ModalBody>
         </Modal>
-        <Jumbotron fluid style={{margin: "1.5rem"}}>
+        <Jumbotron fluid style={{ margin: "1.5rem" }}>
           <div className="container">
             <div className="row">
               <div className="col">

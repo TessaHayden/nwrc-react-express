@@ -25,7 +25,9 @@ class Contact extends Component {
       lastName: "",
       phoneNum: "",
       email: "",
-      feedback: "",
+      agree: false,
+      contactType: 'By Phone',
+      message: "",
       touched: {
         firstName: false,
         lastName: false,
@@ -38,8 +40,16 @@ class Contact extends Component {
   }
 
   handleSubmit(values) {
-    console.log("Current state is: " + JSON.stringify(values));
-    alert("Current state is: " + JSON.stringify(values));
+    this.props.resetMessageForm();
+    this.props.postContactMessage(
+      values.firstName,
+      values.lastName,
+      values.phoneNum,
+      values.email,
+      values.agree,
+      values.contactType,
+      values.messages
+    );
   }
   render() {
     return (
@@ -197,14 +207,39 @@ class Contact extends Component {
                 </Col>
               </Row>
               <Row className="form-group">
-                <Label htmlFor="feedback" md={2}>
-                  Your Feedback
+                <Col md={{ size: 4, offset: 2 }}>
+                  <div className="form-check">
+                    <Label check>
+                      <Control.checkbox
+                        model=".agree"
+                        name="agree"
+                        className="form-check-input"
+                      />{" "}
+                      {""}
+                      <strong>May we contact you?</strong>
+                    </Label>
+                  </div>
+                </Col>
+                <Col md={4}>
+                  <Control.select
+                    model=".contactType"
+                    name="contactType"
+                    className="form-control"
+                  >
+                    <option>By Phone</option>
+                    <option>By Email</option>
+                  </Control.select>
+                </Col>
+              </Row>
+              <Row className="form-group">
+                <Label htmlFor="message" md={2}>
+                  Your Message
                 </Label>
                 <Col md={10}>
                   <Control.textarea
-                    model=".feedback"
-                    id="feedback"
-                    name="feedback"
+                    model=".message"
+                    id="message"
+                    name="message"
                     rows="12"
                     className="form-control"
                   />
@@ -213,7 +248,7 @@ class Contact extends Component {
               <Row className="form-group">
                 <Col md={{ size: 10, offset: 9 }}>
                   <Button style={{ margin: 10 }} type="submit" color="primary">
-                    Send Feedback
+                    Send Message
                   </Button>
                 </Col>
               </Row>
